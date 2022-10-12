@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,56 +19,56 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E73-EH-Wqm">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="503.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ez2-Ok-zJS">
-                                                <rect key="frame" x="8" y="8" width="374" height="487.66666666666669"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6N-lt-1Fl">
+                                                <rect key="frame" x="8" y="8" width="374" height="755"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="jC1-2p-qhy">
                                                 <rect key="frame" x="185" y="301" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottomMargin" secondItem="ez2-Ok-zJS" secondAttribute="bottom" id="HQD-z7-fIH"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="ez2-Ok-zJS" secondAttribute="trailing" id="ZRL-a4-W82"/>
-                                            <constraint firstItem="ez2-Ok-zJS" firstAttribute="top" secondItem="E73-EH-Wqm" secondAttribute="topMargin" id="ctZ-bo-TOf"/>
-                                            <constraint firstItem="ez2-Ok-zJS" firstAttribute="leading" secondItem="E73-EH-Wqm" secondAttribute="leadingMargin" id="lgE-Gf-ER0"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-aP-hEL">
-                                        <rect key="frame" x="0.0" y="503.66666666666663" width="390" height="259.33333333333337"/>
-                                        <subviews>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ho6-yW-DNk">
-                                                <rect key="frame" x="8" y="8.0000000000000142" width="374" height="243.33333333333337"/>
-                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                <connections>
-                                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="uHI-wz-Cnn"/>
-                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="YSJ-g6-b1q"/>
-                                                </connections>
-                                            </pickerView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <constraints>
-                                            <constraint firstItem="Ho6-yW-DNk" firstAttribute="leading" secondItem="yhJ-aP-hEL" secondAttribute="leadingMargin" id="UBV-gD-JMe"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="Ho6-yW-DNk" secondAttribute="trailing" id="XyQ-3W-kDU"/>
-                                            <constraint firstItem="Ho6-yW-DNk" firstAttribute="top" secondItem="yhJ-aP-hEL" secondAttribute="topMargin" id="rRn-od-9al"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="Ho6-yW-DNk" secondAttribute="bottom" id="uVL-ln-a42"/>
-                                        </constraints>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhJ-aP-hEL">
+                                <rect key="frame" x="0.0" y="538.33333333333337" width="390" height="251.66666666666663"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ho6-yW-DNk">
+                                        <rect key="frame" x="8" y="20" width="374" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="uHI-wz-Cnn"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="YSJ-g6-b1q"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="yhJ-aP-hEL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Y9-10-8mo"/>
                             <constraint firstItem="eIZ-gF-VPZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="24F-RK-WPX"/>
+                            <constraint firstItem="yhJ-aP-hEL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RWA-wa-uJZ"/>
                             <constraint firstItem="eIZ-gF-VPZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U8R-pX-5iL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eIZ-gF-VPZ" secondAttribute="bottom" id="Z5l-XS-6cH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eIZ-gF-VPZ" secondAttribute="trailing" id="aOb-Y5-jf7"/>
-                            <constraint firstItem="E73-EH-Wqm" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.66" id="pGA-b5-ZdO"/>
+                            <constraint firstItem="yhJ-aP-hEL" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.33" id="kuM-1W-WBZ"/>
+                            <constraint firstItem="E73-EH-Wqm" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="pGA-b5-ZdO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yhJ-aP-hEL" secondAttribute="bottom" constant="20" id="zbI-VV-hSw"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="dG4-br-UXf" appends="YES" id="e7o-VW-D1p"/>
@@ -78,7 +77,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="jC1-2p-qhy" id="S1V-Cj-bgo"/>
-                        <outlet property="imageView" destination="ez2-Ok-zJS" id="xpU-JZ-fH0"/>
+                        <outlet property="imageView" destination="g6N-lt-1Fl" id="V9m-YV-KJe"/>
                         <outlet property="pickerView" destination="Ho6-yW-DNk" id="gCE-Fs-pja"/>
                     </connections>
                 </viewController>
@@ -97,9 +96,4 @@
             <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
